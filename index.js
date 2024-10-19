@@ -76,5 +76,4 @@ db.sequelize.sync().then(() => {
 
 // Run All Crons
 const runCrons = require("./crons");
-const Questions = require("./models/Questions");
 runCrons();

@@ -27,6 +27,11 @@ let transporter = nodemailer.createTransport({
   },
 });
 
+
+router.post("/", async (req, res) => {
+  res.json({ message: "Welcome to CETPREPAPP SERVER"});
+});
+
 // Creates a new Contact request on database
 router.post("/emailotp", async (req, res) => {
   const bodyData = req.body;
